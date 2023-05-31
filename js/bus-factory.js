@@ -25,7 +25,7 @@ function BusTravel() {
   }
 
   function places(local) {
-    console.log(places(location));
+   // console.log(places(location));
     if (local === "khayelitsha") {
       amountToPlace += 40;
     }
