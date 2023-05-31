@@ -24,15 +24,15 @@ function BusTravel() {
     }
   }
 
-  function places(location) {
+  function places(local) {
     console.log(places(location));
-    if (location === "khayelitsha") {
+    if (local === "khayelitsha") {
       amountToPlace += 40;
     }
-    if (location === "Danoon") {
+    if (local === "Danoon") {
       amountToPlace += 25;
     }
-    if (location === "MitchellsPlain") {
+    if (local === "MitchellsPlain") {
       amountToPlace += 30;
     }
   }
@@ -43,9 +43,15 @@ function BusTravel() {
     if (amount * 2 == 80) {
       returnCost = amount;
     }
-    if (amount *){
-
+    if (amount *2 == 50){
+      returnCost = amount
     }
+    if(amount *2 == 60){
+      returnCost = amount
+    }
+  }
+  function totalReturn(){
+    return returnCost
   }
   return {
     places,
@@ -54,5 +60,6 @@ function BusTravel() {
     toDunoon,
     toMitchellsPlain,
     returnAmount,
+    totalReturn
   };
 }
