@@ -1,0 +1,47 @@
+.container{
+    padding: 2em;
+    margin: 2em;
+
+    background-color: rgb(118, 118, 251);
+    
+}
+.textboc{
+    position:absolute;
+    left:0;
+    height:400px;
+}
+h2{
+    text-align: center;
+}
+.return{
+    float: right;
+}
+.calculateBtn{
+    text-align: center;
+    
+}
+button{
+    background-color: #0e1c6a;
+    border: solid;
+    border-radius: 7%;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    margin: 2px 1px;
+    cursor: pointer;
+}
+.time{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+label {
+    display: inline-block;
+    width: 140px;
+
+  }
+  input {
+    padding: 5px 10px;
+  }

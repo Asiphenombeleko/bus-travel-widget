@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bus-travel-widget</title>
+    <link rel="stylesheet" type="text/css" href="../css/bus.css" />
+
+</head>
+
+<body>
+    <div class="container">
+        <h2><img src="../images/buselogo.png" style="height: 40px; width: 50px;">Bus Travel Widget</h2>
+        <div class="textbox">
+            <label class="points">Points: </label>
+            <input type="text" class="points" name="points"><br><br>
+
+            <label>Location: </label>
+            <input list="Locations" name="Locations" />
+            <datalist id="Locations" class="Locations">
+                <option value="Khayelitsha">
+                <option value="Dunoon">
+                <option value="Michells-Plain">
+            </datalist>
+        </div>
+        <div class="time">
+            <t><img src="../images/bus-clock.png" style="width: 40px; height: 30px;">Travel Times :</t>
+        </div>
+        <div class="radios">
+            <input type="radio" id="Peak" class="peak" name="peak" value="peak">
+            <label class="peak" for="peak">PeakHours</label><br>
+            <input type="radio" id="off-peak" class="off-peak" name="peak" value="off-peak">
+            <label class="off-peak" for="off-peak">Off - Peak </label><br>
+            <input type="checkbox" id="return" name="peak" value="return">
+            <label for="return" >Return Trip</label><br>
+        </div>
+        <div class="calculateBtn">
+            <button>Calculate</button>
+        </div>
+        <h2><img src="../images/calculate.png" style="width: 40px; height: 30px;"> Calculations</h2>
+        <label  for="points">Number of single trips: </label>
+        <input type="text" id="points" class="numberSingle" name="points"><br><br>
+        <label for="location">Price per trip (single): </label>
+        <input type="text" id="location" class="priceSingle"name="location"><br><br>
+        <label for="points">Number of return trips: </label>
+        <input type="text" id="points"class="numberReturn" name="points"><br><br>
+        <label for="location">Price per trip(return): </label>
+        <input type="text" id="location"class="priceReturn" name="location"><br><br>
+    </div>
+    
+</body>
+<script src="../js/bus-travel.js" ></script>
+<script src="../js/bus-factory.js"></script>
+
+</html>
