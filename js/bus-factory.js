@@ -3,23 +3,24 @@ function BusTravel() {
   var khayelitsha = 0;
   var dunoon = 0;
   var plain = 0;
+  var returnCost = 0;
 
   function toKhayelitsha(amount) {
     if (amount == 40) {
-      khayelitsha += 40
+      khayelitsha += 40;
       return khayelitsha;
     }
   }
   function toDunoon(amount) {
     if (amount == 25) {
-      dunoon += 25
+      dunoon += 25;
       return dunoon;
     }
   }
   function toMitchellsPlain(amount) {
     if (amount == 30) {
-      plain += 30
-      return plain 
+      plain += 30;
+      return plain;
     }
   }
 
@@ -38,11 +39,20 @@ function BusTravel() {
   function costOfTravel() {
     return amountToPlace;
   }
+  function returnAmount(amount) {
+    if (amount * 2 == 80) {
+      returnCost = amount;
+    }
+    if (amount *){
+
+    }
+  }
   return {
     places,
     costOfTravel,
     toKhayelitsha,
     toDunoon,
     toMitchellsPlain,
+    returnAmount,
   };
 }
