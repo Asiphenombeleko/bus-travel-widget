@@ -1,9 +1,7 @@
 //reference DOM elements
 const pointsElement = document.querySelector(".points");
-const LocationsElement = document.querySelector(".Location");
-const peakElement = document.querySelector(".peak");
-const off_peakElement = document.querySelector(".off-peak");
-const returnElement = document.getElementById("return");
+const LocalsElement = document.querySelector(".Loca");
+const returnElement = document.getElementById('return');
 const calculateBtnElement = document.querySelector(".calculateBtn");
 const numberSingleElement = document.querySelector(".numberSingle");
 const priceSingleElement = document.querySelector(".priceSingle");
@@ -20,9 +18,10 @@ calculateBtnElement.addEventListener("click", function () {
   //function instance
   var bustravel = BusTravel();
   bustravel.places();
-  if (CheckedPeakRadioElement.value) {
-    pointsElement.innerHTML = bustravel.costOfTravel();
-    numberSingleElement.innerHTML = bustravel.places();
-    
+  bustravel.costOfTravel()
+  if (CheckedPeakRadioElement) {
+    numberReturnElement.innerHTML = bustravel.costOfTravel(CheckedPeakRadioElement.value);
+    numberSingleElement.innerHTML = bustravel.costOfTravel(CheckedPeakRadioElement.value)
+
   }
 });
